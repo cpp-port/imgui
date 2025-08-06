@@ -39,7 +39,7 @@ if (MSVC)
     target_link_libraries(${PROJECT_NAME} PRIVATE acme apex aqua aura axis base)
     target_compile_definitions(${PROJECT_NAME} PRIVATE VK_USE_PLATFORM_WIN32_KHR)
 elseif (${LINUX})
-    #if(USE_PKGCONFIG)
+    #if(${USE_PKGCONFIG})
     pkg_check_modules(${PROJECT_NAME}_PKGCONFIG vulkan)
     #endif()
 
